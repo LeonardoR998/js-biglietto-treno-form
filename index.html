@@ -24,6 +24,7 @@
               <input
                 class="form-control"
                 type="text"
+                id="nomeCognome"
                 placeholder=""
                 aria-label="default input example"
               />
@@ -32,19 +33,57 @@
               <h5>Km da percorrere</h5>
               <input
                 class="form-control"
-                type="text"
+                type="number"
+                id="kmPercorsi"
                 placeholder=""
                 aria-label="default input example"
               />
             </div>
             <div class="col-4">
               <h5>Età</h5>
-              <select class="form-select" aria-label="Default select example">
+              <select
+                class="form-select"
+                id="eta"
+                aria-label="Default select example"
+              >
                 <option selected>Scegli un campo</option>
                 <option value="1">Minorenne</option>
                 <option value="2">Maggiorenne</option>
                 <option value="3">Over 65</option>
               </select>
+            </div>
+          </div>
+          <div class="btn btn-primary mt-4" onclick="calcolaPrezzo()">
+            Genera
+          </div>
+          <div class="btn btn-primary mt-4" onclick="resetForm()">Annulla</div>
+          <div id="risultato" class="mt-4 fs-3"></div>
+        </div>
+      </div>
+
+      <div class="card text-center mt-5">
+        <div class="card-header fs-1">Il tuo Biglietto</div>
+        <div class="card-body bg-secondary text-light">
+          <div class="row">
+            <div class="col-2">
+              <h3 class="mb-4">Nome Passeggero</h3>
+              <p>Leonardo Ricci</p>
+            </div>
+            <div class="col-2">
+              <h5 class="mb-5">Offerta</h5>
+              <p>Biglietto Standard</p>
+            </div>
+            <div class="col-2">
+              <h5 class="mb-5">Carrozza</h5>
+              <p>7</p>
+            </div>
+            <div class="col-2">
+              <h5 class="mb-5">Codice CP</h5>
+              <p>92911</p>
+            </div>
+            <div class="col-2">
+              <h5 class="mb-5">Costo Biglietto</h5>
+              <p>2.10€</p>
             </div>
           </div>
         </div>
